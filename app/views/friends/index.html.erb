@@ -1,0 +1,56 @@
+
+<h1>Friends List.</h1>
+
+<div class="bs-calltoaction bs-calltoaction-info">
+  <div class="row">
+    <div class="col-md-9 cta-contents">
+      <h3 class="cta-title">In this section, you will find all the friends registered.</h3>
+        <div class="cta-desc">
+          <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio sapiente molestias
+              consectetur. Fuga nulla officia error placeat veniam, officiis rerum laboriosam
+              ullam molestiae magni velit laborum itaque minima doloribus eligendi! Lorem ipsum,
+              dolor sit amet consectetur adipisicing elit. Optio sapiente molestias consectetur.
+              Fuga nulla officia error placeat veniam, officiis rerum laboriosam ullam molestiae
+              magni velit laborum itaque minima doloribus eligendi!
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio sapiente molestias
+              consectetur. Fuga nulla officia error placeat veniam, officiis rerum laboriosam
+              ullam molestiae magni velit laborum itaque minima doloribus eligendi! Lorem ipsum,
+              dolor sit amet consectetur adipisicing elit. Optio sapiente molestias consectetur.
+              Fuga nulla officia error placeat veniam, officiis rerum laboriosam ullam molestiae
+              magni velit laborum itaque minima doloribus eligendi!
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio sapiente molestias
+              consectetur. Fuga nulla officia error placeat veniam, officiis rerum laboriosam
+              ullam molestiae magni velit laborum itaque minima doloribus eligendi! Lorem ipsum,
+              dolor sit amet consectetur adipisicing elit. Optio sapiente molestias consectetur.
+              Fuga nulla officia error placeat veniam, officiis rerum laboriosam ullam molestiae
+              magni velit laborum itaque minima doloribus eligendi!
+          </p>     
+        </div>
+    </div>
+  </div>
+</div>
+
+<div id="friends">
+<div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">First name.</th>
+        <th scope="col">Last name.</th>
+        <th scope="col">Email.</th>
+        <th scope="col">Options.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @friends.each do |friend| %>
+        <%= render friend %>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+</div>
+
+<%= link_to "New friend", new_friend_path, class:"btn btn-success" %>
+<br>
+<br>
