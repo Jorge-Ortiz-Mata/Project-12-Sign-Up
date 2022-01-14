@@ -1,4 +1,4 @@
-# PROYECT 11. TIC TAC TOE GAME.  
+# PROYECT 12. SIGN UP LOGIN PROJECT.  
 
 ## Author:
 - Jorge Ortiz Mata.
@@ -7,15 +7,13 @@
 - +52 (444) 576 3034.
 
 ## Description: 
-        This is the TIC TAC TOE game!
-        You will have to introduce the participant's names.
-        Remeber, each player will use either X or O.
-        Once a player gather three consecutives symbols,
-        that player will win. 
-        
-        Take a look to this project. All the information
-        and files are in this repository.
-        I hoe you enjoy this project!
+        This project was develop by using RoR.
+        First of all, you have to sign up in order
+        to access the application. After that, in
+        home page, you will be able to add your own
+        friends.
+        If you sign up with other acount, you will
+        not be able to see the others user's friends.
             
 Have a wonderful day! :smiley:
 Greetings :love_you_gesture:
