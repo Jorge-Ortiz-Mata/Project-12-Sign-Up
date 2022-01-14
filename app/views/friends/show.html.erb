@@ -1,9 +1,12 @@
 
-<%= render @friend %>
-
-<div>
-  <%= link_to "Edit this friend", edit_friend_path(@friend) %> |
-  <%= link_to "Back to friends", friends_path %>
-
-  <%= button_to "Destroy this friend", @friend, method: :delete %>
+<div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+  <div class="card-header"><b>Details.</b></div>
+  <div class="card-body">
+    <h5 class="card-title"><%= @friend.first_name %> <%= @friend.last_name %></h5>
+    <p class="card-text"><%= @friend.email %></p>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p class="card-text"><%= link_to "Edit", edit_friend_path(@friend), class:"btn btn-secondary" %> | <%= link_to "Back", friends_path, class:"btn btn-dark" %></p>
+    <p class="card-text"><%= button_to "Delete", @friend, method: :delete, class:"btn btn-danger" %></p>
+  </div>
 </div>
+
